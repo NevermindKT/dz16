@@ -12,27 +12,39 @@ namespace Hospital
         public List<Doctor> Doctors { get; set; } = new();
         public PatientQueue Queue { get; set; } = new();
 
-        public Room(int id)
+        private Random random = new();
+
+        public Room(int id, int doctorCount)
         {
             RoomId = id;
+            for (int i = 0; i < doctorCount; i++)
+            {
+                var doctor = new Doctor($"Doc {i + 1} in room: {id}");
+                Doctors.Add(doctor);
+                doctor.WorckThread = new Thread(doctor.Work) { IsBackground = true };
+                doctor.WorckThread.Start();
+            }
         }
 
         public void process(int currTime)
         {
             foreach(var doctor in Doctors)
             {
-                if (!doctor.IsBusy || doctor.BusyUntil <= currTime)
+                lock(doctor.Lock)
                 {
+                    if (doctor.IsBusy || Queue.Count == 0) continue;
+
                     var nextPatient = Queue.Dequeue();
-                    if(nextPatient != null)
+                    if (nextPatient != null)
                     {
-                        doctor.IsBusy = true;
-                        doctor.BusyUntil = currTime + 5;
-                        Console.WriteLine($"Doc {doctor.Name}, took in patient {nextPatient.Name}, in {currTime}");
-                    }
-                    else 
-                    {
-                        doctor.IsBusy = true;
+                        if (random.NextDouble() < 0.1)
+                        {
+                            Console.WriteLine($"{currTime}: {nextPatient.Name} is leving queue in room {RoomId}.");
+                            continue;
+                        }
+
+                        doctor.Queue.Enqueue(nextPatient);
+                        Console.WriteLine($"{currTime}: {nextPatient.Name} arrived to {doctor.Name} in room {RoomId}");
                     }
                 }
             }

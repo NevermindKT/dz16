@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +9,19 @@ namespace Hospital
 {
     class PatientQueue
     {
-        private Queue<Patient> queue = new Queue<Patient>();
+        private ConcurrentQueue<Patient> queue = new ConcurrentQueue<Patient>();
 
         public void Enqueue(Patient patient) => queue.Enqueue(patient);
-        public Patient? Dequeue() => queue.Count > 0 ? queue.Dequeue() : null;
+        public Patient? Dequeue()
+        {
+            queue.TryDequeue(out Patient? patient);
+            return patient;
+        }
         public int Count => queue.Count;
-        public Patient? peek() => queue.Count > 0 ? queue.Peek() : null;
+        public Patient? peek()
+        {
+            queue.TryPeek(out Patient? patient);
+            return patient;
+        }
     }
 }

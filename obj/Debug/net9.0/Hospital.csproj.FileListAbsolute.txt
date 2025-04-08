@@ -1,0 +1,15 @@
+C:\Users\NEVERMIND\source\repos\Hospital\bin\Debug\net9.0\Hospital.exe
+C:\Users\NEVERMIND\source\repos\Hospital\bin\Debug\net9.0\Hospital.deps.json
+C:\Users\NEVERMIND\source\repos\Hospital\bin\Debug\net9.0\Hospital.runtimeconfig.json
+C:\Users\NEVERMIND\source\repos\Hospital\bin\Debug\net9.0\Hospital.dll
+C:\Users\NEVERMIND\source\repos\Hospital\bin\Debug\net9.0\Hospital.pdb
+C:\Users\NEVERMIND\source\repos\Hospital\obj\Debug\net9.0\Hospital.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NEVERMIND\source\repos\Hospital\obj\Debug\net9.0\Hospital.AssemblyInfoInputs.cache
+C:\Users\NEVERMIND\source\repos\Hospital\obj\Debug\net9.0\Hospital.AssemblyInfo.cs
+C:\Users\NEVERMIND\source\repos\Hospital\obj\Debug\net9.0\Hospital.csproj.CoreCompileInputs.cache
+C:\Users\NEVERMIND\source\repos\Hospital\obj\Debug\net9.0\Hospital.sourcelink.json
+C:\Users\NEVERMIND\source\repos\Hospital\obj\Debug\net9.0\Hospital.dll
+C:\Users\NEVERMIND\source\repos\Hospital\obj\Debug\net9.0\refint\Hospital.dll
+C:\Users\NEVERMIND\source\repos\Hospital\obj\Debug\net9.0\Hospital.pdb
+C:\Users\NEVERMIND\source\repos\Hospital\obj\Debug\net9.0\Hospital.genruntimeconfig.cache
+C:\Users\NEVERMIND\source\repos\Hospital\obj\Debug\net9.0\ref\Hospital.dll
