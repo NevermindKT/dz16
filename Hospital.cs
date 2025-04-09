@@ -13,10 +13,10 @@ namespace Hospital
 
         private Random Random = new();
 
-        private int CurrMinute = 0;
         private int NextPatient = 1;
 
         Schedule schedule = new();
+        TimeSim time = new();
 
         private int roomAssignmentIndex = 0;
 
@@ -40,28 +40,32 @@ namespace Hospital
 
         public void tick()
         {
-            CurrMinute++;
+            time.Tick();
 
-            if(!schedule.isWorking(CurrMinute))
+            int currMinute = time.CurrentMinutes;
+            string formatedTime = time.GetFormattedTime();
+
+
+            if(!schedule.isWorking(currMinute))
             {
-                Console.WriteLine($"{CurrMinute}: hospital closed.");
+                Console.WriteLine($"Hospital closed.");
                 return;
             }
 
-            if(CurrMinute >= NextPatient && schedule.isArriving(CurrMinute))
+            if (currMinute >= NextPatient && schedule.isArriving(currMinute))
             {
-                var patient = new Patient($"patient: {PatientIdCounter++}");
-                assignPatientToRoom(patient);
-                NextPatient = CurrMinute + Random.Next(2, 10);
+                var patient = new Patient($"Patient: {PatientIdCounter++}");
+                assignPatientToRoom(patient, formatedTime);
+                NextPatient = currMinute + Random.Next(2, 11);
             }
 
             foreach(var room in Rooms)
             {
-                room.process(CurrMinute);
+                room.process(currMinute, formatedTime);
             }
         }
 
-        private void assignPatientToRoom(Patient patient)
+        private void assignPatientToRoom(Patient patient, string formated)
         {
             for (int i = 0; i < Rooms.Count; i++)
             {
@@ -71,12 +75,12 @@ namespace Hospital
                 if (room.Queue.Count < 25)
                 {
                     room.Queue.Enqueue(patient);
-                    Console.WriteLine($"{CurrMinute}: {patient.Name} arrived in room {room.RoomId}");
+                    Console.WriteLine($"{formated}: {patient.Name} arrived in queue to room {room.RoomId}. ");
                     return;
                 }
             }
 
-            Console.WriteLine($"{CurrMinute}: {patient.Name} cannot asses in queue.");
+            Console.WriteLine($"{formated}: {patient.Name} cannot asses in queue. ");
         }
     }
 }

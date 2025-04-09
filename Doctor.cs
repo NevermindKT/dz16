@@ -25,19 +25,29 @@ namespace Hospital
         {
             while (true)
             {
-                lock (Lock)
+                Patient? patient = null;
+                lock(Lock)
                 {
                     if(Queue.Count > 0)
                     {
-                        var patient = Queue.Dequeue();
+                        patient = Queue.Dequeue();
                         IsBusy = true;
-                        Console.WriteLine($"{Name} start heal(idk) {patient.Name}.");
-                        Thread.Sleep(5);
-                        TotalWorkTime += 5;
-                        Console.WriteLine($"{Name} is ended {patient.Name}.");
+                    }
+                }
+
+                if(patient != null)
+                {
+                    Console.WriteLine($"{Name} start heal(idk) {patient.Name}. ");
+                    Thread.Sleep(5000);
+                    TotalWorkTime += 5;
+                    Console.WriteLine($"{Name} ended heal {patient.Name}. ");
+
+                    lock(Lock)
+                    {
                         IsBusy = false;
                     }
                 }
+
                 Thread.Sleep(100);
             }
         }

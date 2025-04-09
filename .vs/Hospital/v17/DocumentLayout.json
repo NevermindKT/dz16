@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\NEVERMIND\\source\\repos\\Hospital\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|c:\\users\\nevermind\\source\\repos\\hospital\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|solutionrelative:schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|c:\\users\\nevermind\\source\\repos\\hospital\\hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|solutionrelative:hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|c:\\users\\nevermind\\source\\repos\\hospital\\patientqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|solutionrelative:patientqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|c:\\users\\nevermind\\source\\repos\\hospital\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|solutionrelative:room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|c:\\users\\nevermind\\source\\repos\\hospital\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|c:\\users\\nevermind\\source\\repos\\hospital\\hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|solutionrelative:hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|c:\\users\\nevermind\\source\\repos\\hospital\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|solutionrelative:doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|c:\\users\\nevermind\\source\\repos\\hospital\\patientqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|solutionrelative:patientqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|c:\\users\\nevermind\\source\\repos\\hospital\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|solutionrelative:schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|c:\\users\\nevermind\\source\\repos\\hospital\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|c:\\users\\nevermind\\source\\repos\\hospital\\timesim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|solutionrelative:timesim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6B5EFC1-4777-4030-8AB7-B3DD19C69AE4}|Hospital.csproj|c:\\users\\nevermind\\source\\repos\\hospital\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,24 +42,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "TimeSim.cs",
+              "DocumentMoniker": "C:\\Users\\NEVERMIND\\source\\repos\\Hospital\\TimeSim.cs",
+              "RelativeDocumentMoniker": "TimeSim.cs",
+              "ToolTip": "C:\\Users\\NEVERMIND\\source\\repos\\Hospital\\TimeSim.cs",
+              "RelativeToolTip": "TimeSim.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T07:11:19.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Schedule.cs",
               "DocumentMoniker": "C:\\Users\\NEVERMIND\\source\\repos\\Hospital\\Schedule.cs",
               "RelativeDocumentMoniker": "Schedule.cs",
               "ToolTip": "C:\\Users\\NEVERMIND\\source\\repos\\Hospital\\Schedule.cs",
               "RelativeToolTip": "Schedule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T08:50:17.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T08:50:17.087Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Patient.cs",
               "DocumentMoniker": "C:\\Users\\NEVERMIND\\source\\repos\\Hospital\\Patient.cs",
               "RelativeDocumentMoniker": "Patient.cs",
@@ -67,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "PatientQueue.cs",
               "DocumentMoniker": "C:\\Users\\NEVERMIND\\source\\repos\\Hospital\\PatientQueue.cs",
               "RelativeDocumentMoniker": "PatientQueue.cs",
@@ -75,50 +90,51 @@
               "RelativeToolTip": "PatientQueue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T13:08:18.728Z"
+              "WhenOpened": "2025-04-07T13:08:18.728Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Doctor.cs",
               "DocumentMoniker": "C:\\Users\\NEVERMIND\\source\\repos\\Hospital\\Doctor.cs",
               "RelativeDocumentMoniker": "Doctor.cs",
               "ToolTip": "C:\\Users\\NEVERMIND\\source\\repos\\Hospital\\Doctor.cs",
               "RelativeToolTip": "Doctor.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAcwCEAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T13:07:19.277Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Room.cs",
               "DocumentMoniker": "C:\\Users\\NEVERMIND\\source\\repos\\Hospital\\Room.cs",
               "RelativeDocumentMoniker": "Room.cs",
               "ToolTip": "C:\\Users\\NEVERMIND\\source\\repos\\Hospital\\Room.cs",
               "RelativeToolTip": "Room.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwD0AAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T12:42:05.634Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Hospital.cs",
               "DocumentMoniker": "C:\\Users\\NEVERMIND\\source\\repos\\Hospital\\Hospital.cs",
               "RelativeDocumentMoniker": "Hospital.cs",
               "ToolTip": "C:\\Users\\NEVERMIND\\source\\repos\\Hospital\\Hospital.cs",
               "RelativeToolTip": "Hospital.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAqwDgAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T12:41:34.168Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\NEVERMIND\\source\\repos\\Hospital\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -126,7 +142,8 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T11:16:09.526Z"
+              "WhenOpened": "2025-04-04T11:16:09.526Z",
+              "EditorCaption": ""
             }
           ]
         }

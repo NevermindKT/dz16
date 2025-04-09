@@ -19,13 +19,15 @@ namespace Hospital
 
         public bool isWorking(int currTime)
         {
-            return currTime >= startTime && currTime < endTime &&
-                !(currTime >= breakStart && currTime < breakEnd);
+            int timeOfDay = currTime % (24 * 60);
+            return timeOfDay >= startTime && timeOfDay < endTime &&
+                !(timeOfDay >= breakStart && timeOfDay < breakEnd);
         }
 
         public bool isArriving(int currTime)
         {
-            return currTime >= patientStart && currTime <= patientEnd;
+            int timeOfDay = currTime % (24 * 60);
+            return timeOfDay >= patientStart && timeOfDay <= patientEnd;
         }
     }
 }

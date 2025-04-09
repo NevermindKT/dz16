@@ -26,26 +26,40 @@ namespace Hospital
             }
         }
 
-        public void process(int currTime)
+        public void process(int currTime, string formatted)
         {
-            foreach(var doctor in Doctors)
+            while(Queue.Count > 0)
             {
-                lock(doctor.Lock)
+                Doctor? avaliableDoc = null;
+                foreach(var doc in Doctors)
                 {
-                    if (doctor.IsBusy || Queue.Count == 0) continue;
-
-                    var nextPatient = Queue.Dequeue();
-                    if (nextPatient != null)
+                    lock(doc.Lock)
                     {
-                        if (random.NextDouble() < 0.1)
+                        if(!doc.IsBusy)
                         {
-                            Console.WriteLine($"{currTime}: {nextPatient.Name} is leving queue in room {RoomId}.");
-                            continue;
+                            avaliableDoc = doc;
+                            break;
                         }
-
-                        doctor.Queue.Enqueue(nextPatient);
-                        Console.WriteLine($"{currTime}: {nextPatient.Name} arrived to {doctor.Name} in room {RoomId}");
                     }
+                }
+
+                if (avaliableDoc == null)
+                    break;
+
+                var nextPatient = Queue.Dequeue();
+                if (nextPatient == null)
+                    break;
+
+                if(random.NextDouble() < 0.1)
+                {
+                    Console.WriteLine($"{nextPatient.Name} leve the queue to room {RoomId}. ");
+                    continue;
+                }
+
+                lock(avaliableDoc.Lock)
+                {
+                    avaliableDoc.Queue.Enqueue(nextPatient);
+                    Console.WriteLine($"{nextPatient.Name} is arrived to {avaliableDoc.Name}. ");
                 }
             }
         }
